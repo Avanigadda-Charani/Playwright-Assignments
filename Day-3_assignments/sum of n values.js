@@ -4,9 +4,6 @@ function nValues(n){
         let oldsum=sum
         sum=sum+i
          console.log(i, sum);
-        //console.log(oldsum+"+"+i+"="+sum)
-     
-
     }
     return sum
   
