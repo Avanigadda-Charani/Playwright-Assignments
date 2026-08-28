@@ -1,28 +1,28 @@
-function launchBrowser(browserName){
-    if(browserName==="chrome"){
+function launchBrowser(browserName) {
+    if (browserName === "chrome") {
         console.log("chrome")
-    }else{
+    } else {
         console.log("not chrome");
-        
+
     }
 
 }
-function runTests(testType){
+function runTests(testType) {
     switch (testType) {
         case "smoke":
-        console.log("smoke");
-        break;
+            console.log("smoke");  //checks bacis functionality of an application
+            break;
         case "sanity":
-        console.log("sanity");
-        break;
+            console.log("sanity");  //checks specific functionality after code changes
+            break;
         case "regression":
-        console.log("regression");
-        break;
+            console.log("regression"); //checks existing functionality still working or not
+            break;
         default:
-        console.log("default smoke");
-        break;
+            console.log("default smoke");
+            break;
     }
 
 }
-runTests("regressions")
+runTests("regression")
 launchBrowser("firefox")
